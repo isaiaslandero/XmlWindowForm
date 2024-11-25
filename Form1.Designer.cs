@@ -33,28 +33,33 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.nombres_text = new System.Windows.Forms.TextBox();
+			this.sexo_combo = new System.Windows.Forms.ComboBox();
+			this.telefono_text = new System.Windows.Forms.TextBox();
+			this.compania_combo = new System.Windows.Forms.ComboBox();
+			this.direccion_text = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.tablaListado = new System.Windows.Forms.DataGridView();
 			this.button2 = new System.Windows.Forms.Button();
+			this.NOMBRES = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SEXO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.TELEFONO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.EMPRESA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.DIRECCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.tablaListado)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.button2);
-			this.panel1.Controls.Add(this.dataGridView1);
+			this.panel1.Controls.Add(this.tablaListado);
 			this.panel1.Controls.Add(this.button1);
-			this.panel1.Controls.Add(this.textBox3);
-			this.panel1.Controls.Add(this.comboBox2);
-			this.panel1.Controls.Add(this.textBox2);
-			this.panel1.Controls.Add(this.comboBox1);
-			this.panel1.Controls.Add(this.textBox1);
+			this.panel1.Controls.Add(this.direccion_text);
+			this.panel1.Controls.Add(this.compania_combo);
+			this.panel1.Controls.Add(this.telefono_text);
+			this.panel1.Controls.Add(this.sexo_combo);
+			this.panel1.Controls.Add(this.nombres_text);
 			this.panel1.Controls.Add(this.label4);
 			this.panel1.Controls.Add(this.label3);
 			this.panel1.Controls.Add(this.label2);
@@ -105,55 +110,55 @@
 			this.label4.TabIndex = 3;
 			this.label4.Text = "DIRECCION:";
 			// 
-			// textBox1
+			// nombres_text
 			// 
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.textBox1.Location = new System.Drawing.Point(16, 37);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(212, 29);
-			this.textBox1.TabIndex = 4;
+			this.nombres_text.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.nombres_text.Location = new System.Drawing.Point(16, 37);
+			this.nombres_text.Name = "nombres_text";
+			this.nombres_text.Size = new System.Drawing.Size(212, 29);
+			this.nombres_text.TabIndex = 4;
 			// 
-			// comboBox1
+			// sexo_combo
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.sexo_combo.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.sexo_combo.FormattingEnabled = true;
+			this.sexo_combo.Items.AddRange(new object[] {
             "FEMENINO",
             "MASCULINO"});
-			this.comboBox1.Location = new System.Drawing.Point(69, 79);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(159, 29);
-			this.comboBox1.TabIndex = 5;
+			this.sexo_combo.Location = new System.Drawing.Point(69, 79);
+			this.sexo_combo.Name = "sexo_combo";
+			this.sexo_combo.Size = new System.Drawing.Size(159, 29);
+			this.sexo_combo.TabIndex = 5;
 			// 
-			// textBox2
+			// telefono_text
 			// 
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.textBox2.Location = new System.Drawing.Point(16, 143);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(101, 29);
-			this.textBox2.TabIndex = 6;
+			this.telefono_text.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.telefono_text.Location = new System.Drawing.Point(16, 143);
+			this.telefono_text.Name = "telefono_text";
+			this.telefono_text.Size = new System.Drawing.Size(101, 29);
+			this.telefono_text.TabIndex = 6;
 			// 
-			// comboBox2
+			// compania_combo
 			// 
-			this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Items.AddRange(new object[] {
+			this.compania_combo.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.compania_combo.FormattingEnabled = true;
+			this.compania_combo.Items.AddRange(new object[] {
             "CLARO",
             "TIGO",
             "FIJO"});
-			this.comboBox2.Location = new System.Drawing.Point(124, 143);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(105, 29);
-			this.comboBox2.TabIndex = 7;
+			this.compania_combo.Location = new System.Drawing.Point(124, 143);
+			this.compania_combo.Name = "compania_combo";
+			this.compania_combo.Size = new System.Drawing.Size(105, 29);
+			this.compania_combo.TabIndex = 7;
 			// 
-			// textBox3
+			// direccion_text
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.textBox3.Location = new System.Drawing.Point(16, 209);
-			this.textBox3.Multiline = true;
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(214, 76);
-			this.textBox3.TabIndex = 8;
+			this.direccion_text.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.direccion_text.Location = new System.Drawing.Point(16, 209);
+			this.direccion_text.Multiline = true;
+			this.direccion_text.Name = "direccion_text";
+			this.direccion_text.Size = new System.Drawing.Size(214, 76);
+			this.direccion_text.TabIndex = 8;
 			// 
 			// button1
 			// 
@@ -164,14 +169,24 @@
 			this.button1.TabIndex = 9;
 			this.button1.Text = "AGREGAR AL LISTADO";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// dataGridView1
+			// tablaListado
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(238, 12);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(550, 332);
-			this.dataGridView1.TabIndex = 10;
+			this.tablaListado.AllowUserToAddRows = false;
+			this.tablaListado.AllowUserToDeleteRows = false;
+			this.tablaListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.tablaListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NOMBRES,
+            this.SEXO,
+            this.TELEFONO,
+            this.EMPRESA,
+            this.DIRECCION});
+			this.tablaListado.Location = new System.Drawing.Point(238, 12);
+			this.tablaListado.Name = "tablaListado";
+			this.tablaListado.ReadOnly = true;
+			this.tablaListado.Size = new System.Drawing.Size(550, 332);
+			this.tablaListado.TabIndex = 10;
 			// 
 			// button2
 			// 
@@ -182,6 +197,37 @@
 			this.button2.TabIndex = 11;
 			this.button2.Text = "GUARDAR";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// NOMBRES
+			// 
+			this.NOMBRES.HeaderText = "NOMBRES";
+			this.NOMBRES.Name = "NOMBRES";
+			this.NOMBRES.ReadOnly = true;
+			// 
+			// SEXO
+			// 
+			this.SEXO.HeaderText = "SEXO";
+			this.SEXO.Name = "SEXO";
+			this.SEXO.ReadOnly = true;
+			// 
+			// TELEFONO
+			// 
+			this.TELEFONO.HeaderText = "TELEFONO";
+			this.TELEFONO.Name = "TELEFONO";
+			this.TELEFONO.ReadOnly = true;
+			// 
+			// EMPRESA
+			// 
+			this.EMPRESA.HeaderText = "EMPRESA";
+			this.EMPRESA.Name = "EMPRESA";
+			this.EMPRESA.ReadOnly = true;
+			// 
+			// DIRECCION
+			// 
+			this.DIRECCION.HeaderText = "DIRECCION";
+			this.DIRECCION.Name = "DIRECCION";
+			this.DIRECCION.ReadOnly = true;
 			// 
 			// Form1
 			// 
@@ -193,7 +239,7 @@
 			this.Text = "Form1";
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.tablaListado)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -203,16 +249,21 @@
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView tablaListado;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.ComboBox comboBox2;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox direccion_text;
+		private System.Windows.Forms.ComboBox compania_combo;
+		private System.Windows.Forms.TextBox telefono_text;
+		private System.Windows.Forms.ComboBox sexo_combo;
+		private System.Windows.Forms.TextBox nombres_text;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRES;
+		private System.Windows.Forms.DataGridViewTextBoxColumn SEXO;
+		private System.Windows.Forms.DataGridViewTextBoxColumn TELEFONO;
+		private System.Windows.Forms.DataGridViewTextBoxColumn EMPRESA;
+		private System.Windows.Forms.DataGridViewTextBoxColumn DIRECCION;
 	}
 }
 
